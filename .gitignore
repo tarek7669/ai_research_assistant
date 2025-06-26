@@ -1,0 +1,5 @@
+Dockerfile
+.dockerignore
+.env
+/app/core/__pycache__
+/app/services/__pycache__
