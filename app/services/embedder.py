@@ -8,3 +8,8 @@ class Embedder:
 
     def embed(self, texts: List[str]):
         return self.model.encode(texts, show_progress_bar=False, convert_to_numpy=True)
+
+    @property
+    def dim(self):
+        # Return dimension of one example
+        return len(self.embed(["test"])[0])
