@@ -4,6 +4,7 @@ accelerate>=0.30.1
 sentence-transformers>=2.6.1
 torch>=2.2.2
 faiss-cpu>=1.7.4
+accelerate
 
 # PDF parsing
 PyMuPDF>=1.23.22
