@@ -1,6 +1,6 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from transformers.pipelines import pipeline
-from app.core.config import settings
+from core.config import settings
 import torch
 from typing import List
 

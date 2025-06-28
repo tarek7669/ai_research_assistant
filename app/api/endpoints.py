@@ -1,10 +1,10 @@
 import tempfile
 import os
 from fastapi import APIRouter, File, Form, UploadFile
-from app.services.embedder import Embedder
-from app.services.vector_store import VectorStore
-from app.services.pdf_processor import PDFProcessor
-from app.services.qa_engine import QAEngine
+from services.embedder import Embedder
+from services.vector_store import VectorStore
+from services.pdf_processor import PDFProcessor
+from services.qa_engine import QAEngine
 
 router = APIRouter()
 
