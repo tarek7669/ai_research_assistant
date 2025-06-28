@@ -8,4 +8,3 @@ test_qa.py
 /app/api/__pycache__
 /app/__pycache__
 test_embed.py
-test_embed.py
