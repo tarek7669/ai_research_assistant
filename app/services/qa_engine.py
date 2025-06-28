@@ -55,6 +55,6 @@ class QAEngine:
         response = self.generator(prompt, max_new_tokens=256, do_sample=False)[0]['generated_text'] # type: ignore
         
         # Remove the prompt from the answer
-        answer = response.split("### Answer:")[-1].strip() # type: ignore
+        answer = response.split("### Answer:")[-1].strip().split("\"\"\"")[0] # type: ignore
 
         return answer

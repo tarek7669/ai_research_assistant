@@ -34,10 +34,11 @@ if st.button("Ask"):
                 answer = response.json().get("answer", "No answer available")
                 sources = response.json().get("sources", [])
                 st.success("Answer:")
-                st.markdown(f"**{answer}**")
+                st.markdown({answer})
                 with st.expander("Sources"):
                     for i, (chunk, score) in enumerate(sources):
                         st.markdown(f"**Source {i+1}**")
+                        st.code(chunk[:500] + ("..." if len(chunk) > 500 else ""))
 
             else:
                 st.error(f"Failed to get an answer: {response.text}")
