@@ -21,17 +21,18 @@ class QAEngine:
         self.tokenizer = AutoTokenizer.from_pretrained(settings.LLM_MODEL_NAME)
 
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        dtype = torch.float16 if torch.cuda.is_available() else torch.float32
+
         self.model = AutoModelForCausalLM.from_pretrained(
             settings.LLM_MODEL_NAME,
-            torch_dtype=torch.float16 if settings.USE_FP16 else torch.float32,
-            device_map=None
-        )
+            torch_dtype=dtype
+        ).to(device)
 
         self.generator = pipeline(
             "text-generation",
             model=self.model,
             tokenizer=self.tokenizer,
-            device=0 if torch.cuda.is_available() else -1,
+            device=0 if torch.cuda.is_available() else -1
         )
 
     def generate_answer(self, question: str, context_chunks: List[str]) -> str:

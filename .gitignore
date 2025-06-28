@@ -5,3 +5,5 @@ Dockerfile
 /app/services/__pycache__
 /data
 test_qa.py
+/app/api/__pycache__
+/app/__pycache__
