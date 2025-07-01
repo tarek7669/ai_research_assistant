@@ -8,3 +8,4 @@ test_qa.py
 /app/api/__pycache__
 /app/__pycache__
 test_embed.py
+streamlit_app.py
