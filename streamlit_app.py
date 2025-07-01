@@ -1,7 +1,11 @@
 import streamlit as st
 import requests
+import os
+from dotenv import load_dotenv
 
-BACKEND_URL = "http://16.16.212.140:8000"
+load_dotenv()
+
+BACKEND_URL = f"{os.getenv('BACKEND_URL')}:8000"
 
 st.set_page_config(page_title="AI Research Assistant", layout="centered")
 st.title("AI Research Assistant")
