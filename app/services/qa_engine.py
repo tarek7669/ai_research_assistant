@@ -8,8 +8,7 @@ class QAEngine:
     def __init__(self):
 
         print("Trying to Login to Hugging Face")
-
-        assert "phi" in settings.LLM_MODEL_NAME.lower(), f"Wrong model still being used!: {settings.LLM_MODEL_NAME}"
+        
         # Login to Hugging Face
         from huggingface_hub import login
         login(token=settings.HUGGINGFACE_TOKEN)

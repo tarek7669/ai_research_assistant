@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BACKEND_URL = "http://localhost:8000"
+BACKEND_URL = "http://16.16.212.140:8000"
 
 st.set_page_config(page_title="AI Research Assistant", layout="centered")
 st.title("AI Research Assistant")
