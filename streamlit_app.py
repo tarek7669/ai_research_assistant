@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BACKEND_URL = f"{os.getenv('BACKEND_URL')}:8000"
+# BACKEND_URL = f"{os.getenv('BACKEND_URL')}:8000"
+BACKEND_URL = st.secrets["BACKEND_URL"]
 
 st.set_page_config(page_title="AI Research Assistant", layout="centered")
 st.title("AI Research Assistant")
