@@ -25,3 +25,9 @@ A fully containerized, production-ready AI Research Assistant that allows users 
 - **PyMuPDF / PDFMiner** – for PDF parsing
 - **Docker** – for containerization and deployment
 - **AWS EC2 / Hugging Face Spaces** – for hosting backend
+
+---
+
+ ## TRY IT: https://ai-research-assist.streamlit.app/
+
+
