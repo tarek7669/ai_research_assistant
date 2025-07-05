@@ -4,6 +4,9 @@ A fully containerized, production-ready AI Research Assistant that allows users 
 
 ---
 
+TRY IT: https://ai-research-assist.streamlit.app/
+
+---
 ## 🚀 Features
 
 - 🔍 **PDF Ingestion & Chunking**: Automatically parses uploaded research papers into meaningful text chunks for efficient retrieval.
